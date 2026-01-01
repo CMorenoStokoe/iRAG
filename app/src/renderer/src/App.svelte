@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
+  import logoImage from './assets/logo.png'
 
   // States
   $: stats = { totalChunks: 0, totalFolders: 0, folders: [], files: [] } as {
@@ -130,7 +131,7 @@
   <!-- Header -->
   <div>
     <div class="max-w-7xl mx-auto px-6 py-2 flex items-center gap-3">
-      <img src="/src/assets/logo.png" alt="iRAG Logo" class="h-12 w-12" />
+      <img src={logoImage} alt="iRAG Logo" class="h-12 w-12" />
       <h1
         class="text-lg font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
       >

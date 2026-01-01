@@ -1,5 +1,5 @@
 appId: com.electron.app
-productName: app
+productName: MorenoRag
 directories:
     buildResources: build
 files:
@@ -13,10 +13,13 @@ files:
 extraResources:
     - from: 'src/renderer/src/assets/logo.png'
       to: 'logo.png'
+    - from: 'build/icon.png'
+      to: 'icon.png'
 asarUnpack:
     - resources/**
 win:
-    executableName: app
+    executableName: MorenoRag
+    sign: false
 nsis:
     artifactName: ${name}-${version}-setup.${ext}
     shortcutName: ${productName}
